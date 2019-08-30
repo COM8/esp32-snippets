@@ -9,4 +9,4 @@ However, due to API design, it was impossible to kill the server, thus, I implem
 
 ## BLEAdvertising.cpp update
 
-Due to [this issue](https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/BLEAdvertising.cpp#L496), removed the 496th line from the original BLEAdvertising.cpp file.
+Due to [this issue](https://github.com/nkolban/esp32-snippets/issues/797), removed [the 496th line](https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/BLEAdvertising.cpp#L496) from the original BLEAdvertising.cpp file.
