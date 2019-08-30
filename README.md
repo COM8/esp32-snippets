@@ -1,2 +1,8 @@
 # ESP32 Snippets
-This repository is no longer being actively maintained.  It was previously archived to make it read-only but, by request, has been un-archived so that others may continue to post comments and issues.  However, please understand that issues raised are unlikely to be resolved against this repository.
+
+The main reason that I forked this library is because the API design of the original repository does not allow the programmers to implement the app that BLE server and BLE client coexist and run simultaneously.
+
+As one of the projects that I am participating in requires both BLE client and server on same board, thus, I decided to fork the esp32 library, and add new codes that allow me to do this.
+
+To make the ESP32 to have BLE server mode and BLE client mode, we should be able to kill the BLE server if requried.
+However, due to API design, it was impossible to kill the server, thus, I implemented a method called "removeServer" in the BLEDevice.cpp file to make it possible.
