@@ -641,4 +641,11 @@ void BLEDevice::setCustomGattsHandler(gatts_event_handler handler) {
 	m_customGattsHandler = handler;
 }
 
+/* STATIC */
+void BLEDevice::removeServer() {
+    if (m_pServer != nullptr) delete m_pServer;
+    m_pServer = nullptr;
+}
+
+
 #endif // CONFIG_BT_ENABLED
