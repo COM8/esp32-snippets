@@ -63,6 +63,7 @@ public:
 	static void deinit(bool release_memory = false);
 	static uint16_t		m_localMTU;
 	static esp_ble_sec_act_t 	m_securityLevel;
+	static void removeServer();
 
 private:
 	static BLEServer*	m_pServer;
