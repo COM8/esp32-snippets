@@ -9,6 +9,8 @@ However, due to API design, it was impossible to kill the server, thus, I implem
 
 ## Changes
 
-### 1) BLEAdvertising.cpp update
+### 1) Make BLE Advertising stop when it is required
 
 Due to [this issue](https://github.com/nkolban/esp32-snippets/issues/797), removed [the 496th line](https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/BLEAdvertising.cpp#L496) from the original BLEAdvertising.cpp file.
+
+### 2) Add new static method to kill BLE server properly
