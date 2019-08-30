@@ -14,3 +14,5 @@ However, due to API design, it was impossible to kill the server, thus, I implem
 Due to [this issue](https://github.com/nkolban/esp32-snippets/issues/797), removed [the 496th line](https://github.com/nkolban/esp32-snippets/blob/master/cpp_utils/BLEAdvertising.cpp#L496) from the original BLEAdvertising.cpp file.
 
 ### 2) Add new static method to kill BLE server properly
+
+Add removeServer() method to BLEDevice class, so that the programmer could deinitialise the BLE server(kill the BLE server).
