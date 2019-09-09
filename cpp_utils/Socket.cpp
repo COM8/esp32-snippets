@@ -432,7 +432,7 @@ int Socket::send(const uint8_t* data, size_t length) const {
 				}
 			}
 		} else {
-			rc = ::lwip_sendto(m_sock, data, length, 0);
+			rc = ::lwip_send(m_sock, data, length, 0);
 			if ((rc < 0) && (errno != EAGAIN)) {
 				// no cure for errors other than EAGAIN - log and exit
 				ESP_LOGE(LOG_TAG, "send: socket=%d, %s", m_sock, strerror(errno));
