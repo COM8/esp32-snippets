@@ -71,12 +71,12 @@ public:
 	void setNotifyProperty(bool value);
 	void setReadProperty(bool value);
 	void setValue(uint8_t* data, size_t size);
-	void setValue(std::string value);
-	void setValue(uint16_t& data16);
-	void setValue(uint32_t& data32);
-	void setValue(int& data32);
-	void setValue(float& data32);
-	void setValue(double& data64); 
+	void setValue(std::string& value);
+	void setValue(uint16_t data16);
+	void setValue(uint32_t data32);
+	void setValue(int data32);
+	void setValue(float data32);
+	void setValue(double data64); 
 	void setWriteProperty(bool value);
 	void setWriteNoResponseProperty(bool value);
 	std::string toString();
