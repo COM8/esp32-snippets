@@ -657,7 +657,7 @@ void BLECharacteristic::setValue(uint8_t* data, size_t length) {
  * @param [in] Set the value of the characteristic.
  * @return N/A.
  */
-void BLECharacteristic::setValue(std::string& value) {
+void BLECharacteristic::setValue(std::string value) {
 	setValue((uint8_t*)(value.data()), value.length());
 } // setValue
 
