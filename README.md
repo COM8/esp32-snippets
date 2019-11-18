@@ -16,3 +16,7 @@ Due to [this issue](https://github.com/nkolban/esp32-snippets/issues/797), remov
 ### 2) Add new static method to kill BLE server properly
 
 Add removeServer() method to BLEDevice class, so that the programmer could deinitialise the BLE server(kill the BLE server).
+
+### 3) Creates a bunch of fixes for GCC warnings and errors
+
+View commits for more information.
