@@ -1,21 +1,6 @@
-# Edit following two lines to set component requirements (see docs)
-set(COMPONENT_REQUIRES
-  "console"
-  "fatfs"
-  "json"
-  "mdns"
-  "nvs_flash"
-  "bt"
-)
-set(COMPONENT_PRIV_REQUIRES )
-
 file(GLOB COMPONENT_SRCS
-  LIST_DIRECTORIES false
-  "*.h"
-  "*.cpp"
-  "*.c"
-  "*.S"
+    "*.cpp"
 )
-set(COMPONENT_ADD_INCLUDEDIRS ".")
-
-register_component()
+idf_component_register(SRCS ${COMPONENT_SRCS}
+                       INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR} $ENV{IDF_PATH}/components
+                       REQUIRES console fatfs json mdns nvs_flash bt)
